@@ -26,6 +26,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudents() {
 		// Add your implementation here
+		
 		return null;
 	}
 
@@ -37,6 +38,16 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
+		Student temp[]=new Student[students.length];
+		for(int i=0;i<students.length;i++)
+		{
+			temp[index]=students[i];
+		}
+		for(int i=0;i<students.length;i++)
+		{
+			students[i]=temp[i];
+		}
+		
 		return null;
 	}
 
